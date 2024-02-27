@@ -1,0 +1,121 @@
+body {
+    background-color: #e9eff7;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover, #navbar ul li a:focus {
+    background-color: #111;
+}
+
+/* Background Images */
+.thorncliffe-background {
+    background-image: url('thorncliffe-park.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white; /* Text color for contrast */
+}
+
+.Consulting-Image {
+    background-image: url('Consulting.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: orange; 
+}
+
+thorncliffe-background h1, .thorncliffe-background h2, .thorncliffe-background p, .Consulting-Image h1, .Consulting-Image h2, .Consulting-Image p {
+    font-weight: bold; 
+}
+
+/* Specific color adjustments for readability */
+.thorncliffe-background h1, .thorncliffe-background h2, .thorncliffe-background p {
+    color: white; /* Ensuring white text for Thorncliffe background */
+}
+
+.Consulting-Image h1, .Consulting-Image h2, .Consulting-Image p {
+    color: orange; /* Ensuring orange text for Consulting background */
+}
+
+/* Page Elements */
+#bio h1, #interests h2 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #004d99; /* A different color for the table border */
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#profileImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    transition: transform 0.25s ease;
+}
+
+#profileImage:hover {
+    transform: scale(1.1);
+}
+
+/* Customized styles for headings */
+h1, h2, h3 {
+    font-weight: bold; /* Ensure titles are bold */
+}
+
+/* Adjusting font colors for visibility on specific backgrounds */
+.Consulting-Image, .thorncliffe-background {
+    color: #fff; /* White text for better contrast */
+}
+
+/* Ensure text colors are adjusted for visibility */
+.thorncliffe-background {
+    color: white; /* Set text color to white for visibility */
+}
+
+.Consulting-Image {
+    color: black; /* Set text color to black for visibility */
+}
+
+/* Additional Styling */
+/* Add any additional styling that matches your design requirements */

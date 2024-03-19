@@ -164,3 +164,30 @@ h1, h2, h3 {
 .Consulting-Image {
     color: black; /* Set text color to black for visibility */
 }
+#resumeBox {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#resumeBox p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#resumeBox a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+#resumeBox a:hover {
+    background-color: #0056b3;
+}

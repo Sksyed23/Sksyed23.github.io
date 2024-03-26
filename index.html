@@ -41,8 +41,12 @@
     </div>
 
     <div id="imageContainer">
-        <a href="Shayanpic.jpg" target="_blank"><img src="Shayanpic.jpg" alt="Shayan Syed" id="profileImage" style="cursor: pointer;"></a>
+        <a href="Shayanpic.jpg" target="_blank">
+            <img class="image-with-caption" src="Shayanpic.jpg" alt="Shayan Syed" id="profileImage" data-caption="Shayan Syed - a professional working at Oracle and a student at Toronto Metropolitan University." tabindex="0" style="cursor: pointer;">
+        </a>
     </div>
+    
+    <div id="image-caption" style="padding: 10px; border: 1px solid #ccc; display: none;"></div>
     
     <section id="program">
         <h2>Program Overview</h2>
@@ -72,49 +76,48 @@
                     <td>My Current Workplace: Oracle Corporation is an American multinational computer technology company headquartered in Austin, Texas, United States. In 2020, Oracle was the third-largest software company in the world by revenue and market capitalization. The company sells database software and cloud computing.</td>
                 </tr>
                 <tr>
-                    <td><a href="https://www.torontomu.ca/">Toronto Metropolitan University</a></td>
-                    <td>My Current School: Toronto Metropolitan University is a public research university located in Toronto, Ontario, Canada.</td>
+                <td><a href="https://www.torontomu.ca/">Toronto Metropolitan University</a></td>
+                <td>My Current School: Toronto Metropolitan University is a public research university located in Toronto, Ontario, Canada.</td>
                 </tr>
-            </table>
-        </div>
-    </div>
-    
-    <!-- New Contact Form Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <fieldset>
-                <legend>Gender:</legend>
-                <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label>
-                <input type="radio" id="other" name="gender" value="Other"><label for="other">Other</label>
-            </fieldset>
-            
-            <label for="feedback">Feedback:</label>
-            <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
-            
-            <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Subscribe to newsletter</label>
-            
-            <label for="country">Country:</label>
-            <select id="country" name="country">
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-                <option value="other">Other</option>
-            </select>
-            
-            <button type="submit">Submit</button>
-            <button type="reset">Clear</button>
-        </form>
-    </section>
-    
-    <script src="script.js"></script>
-    <a href="Shayan_Syed_Resume_L.pdf" target="_blank">Download My Resume</a>
+                </table>
+                </div>
+                </div>
+                <!-- New Contact Form Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other"><label for="other">Other</label>
+        </fieldset>
+        
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+        
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to newsletter</label>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+<a href="Shayan_Syed_Resume_L.pdf" target="_blank">Download My Resume</a>
 </body>
 </html>

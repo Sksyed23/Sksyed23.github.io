@@ -36,3 +36,23 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     // this.reset(); // Uncomment this if you want to clear the form after submission
     // window.location.href = 'thankyoupage.html'; // Redirect to a thank you page
 });
+
+// New image caption functionality
+document.querySelectorAll('.image-with-caption').forEach(item => {
+  item.addEventListener('mouseover', showCaption);
+  item.addEventListener('focus', showCaption);
+  item.addEventListener('mouseout', hideCaption);
+  item.addEventListener('blur', hideCaption);
+});
+
+function showCaption(event) {
+  const caption = event.target.getAttribute('data-caption');
+  const captionDiv = document.getElementById('image-caption');
+  captionDiv.textContent = caption;
+  captionDiv.style.display = 'block'; // Show the caption div
+}
+
+function hideCaption() {
+  const captionDiv = document.getElementById('image-caption');
+  captionDiv.style.display = 'none'; // Hide the caption div
+}

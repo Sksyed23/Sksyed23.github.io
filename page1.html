@@ -4,17 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Thorncliffe Park</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5dc; /* Background color */
+            color: #333; /* Text color */
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background-image: url('thorncliffe-park.avif'); /* Background image */
+            background-size: cover;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+
+        .title-box {
+            display: inline-block;
+            background-color: #ffffff; /* White background for the title */
+            color: #046307; /* Text color - emerald green */
+            padding: 10px 20px;
+            border-radius: 10px; /* Rounded corners for the box */
+            margin-top: 20px; /* Margin top */
+        }
+
+        h1 {
+            margin: 0; /* Remove default margin */
+            font-size: 48px; /* Font size */
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            max-width: 960px;
+            margin: auto;
+            gap: 20px; /* Space between sections */
+        }
+
+        section, .community-links {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        section {
+            flex: 3;
+        }
+
+        .community-links {
+            flex: 1;
+            position: sticky;
+            top: 20px;
+        }
+
+        .community-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .community-links ul li a {
+            color: #024e76; /* Link color */
+            text-decoration: none;
+        }
+
+        .community-links ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .community-header, p {
+            color: #024e76;
+        }
+
+        .community-header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+    </style>
 </head>
-<body class="thorncliffe-background">
+<body>
     <header>
-        <!-- Navigation Menu -->
+        <div class="title-box">
+            <h1>Thorncliffe Park</h1>
+        </div>
     </header>
     
     <main>
-        <h1>Thorncliffe Park</h1>
-        <p>Thorncliffe Park is a dynamic and densely populated neighborhood located in the east-central part of Toronto, Ontario, Canada. Known for its vibrant multicultural landscape, this community is home to an estimated 30,000 residents, making it one of the most densely populated areas in the city. The population is incredibly diverse, with a large proportion of immigrants and newcomers to Canada, contributing to the rich cultural tapestry of the area. This diversity is reflected in the myriad of languages spoken, the variety of local businesses, and the cultural celebrations that animate the community throughout the year.</p>
-        <p>Despite its spirited community life and the strong sense of solidarity among residents, Thorncliffe Park faces significant challenges, particularly in terms of resource availability. The area is characterized by high-density residential buildings, which house a significant number of low-income families. Many of these families, especially the youth, face barriers to accessing essential services such as education, recreational facilities, and employment opportunities. The lack of resources is a pressing issue, with local schools often overcrowded and underfunded, and public spaces not adequately meeting the needs of the community's youth. As a community advocate from Thorncliffe Park, my mission is to bridge these gaps, fostering initiatives that support the youth and empower them to reach their full potential. Through collaboration with local organizations and stakeholders, I am committed to creating a more inclusive and supportive environment, where every resident has access to the opportunities they need to thrive.</p>
+        <section>
+            <p>Thorncliffe Park is a dynamic and densely populated neighborhood...</p>
+            <!-- Additional paragraphs and content about Thorncliffe Park -->
+        </section>
+        <div class="community-links">
+            <h2 class="community-header">Places I've Worked With in the Community</h2>
+            <ul>
+                <li><a href="https://www.iamthorncliffe.com/" target="_blank">I Am Thorncliffe</a></li>
+                <li><a href="https://tno-toronto.org/" target="_blank">The Neighbourhood Organization (TNO)</a></li>
+                <li><a href="https://thorncliffehub.org/neighbourhood/" target="_blank">Thorncliffe Neighbourhood Office</a></li>
+            </ul>
+        </div>
     </main>
 </body>
 </html>

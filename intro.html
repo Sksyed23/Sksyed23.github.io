@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayan Syed - Tech Enthusiast</title>
+    <meta name="description" content="Welcome to Shayan Syed's portfolio, a showcase of my technology projects and skills.">
+    <meta name="keywords" content="Shayan Syed, Tech Portfolio, Software Developer, Technology Enthusiast">
+    <meta name="author" content="Shayan Syed">
+    <!-- Import Dancing Script font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #0A0F0D, #003973); /* Dark blue gradient */
+            color: white;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 25px;
+            backdrop-filter: blur(5px);
+            position: relative;
+            z-index: 2;
+            margin-top: 50px; /* Adjust this value as needed */
+        }
+        h1 {
+            margin: 0.5em 0;
+            color: #007BFF; /* Blue color for the name */
+            font-family: 'Dancing Script', cursive; /* Script font for the name */
+            font-size: 48px; /* Adjust the size as needed */
+        }
+        p {
+            margin: 0.5em 0;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px; /* Position the button under the box */
+            z-index: 3; /* Ensure it's above other elements */
+            position: relative;
+        }
+        .more-button {
+            padding: 10px 20px;
+            background-color: #007BFF; /* Blue button */
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .more-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        .background-animation {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .dot {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+        @keyframes move {
+            0% { transform: translateY(0) translateX(0); }
+            100% { transform: translateY(-1000px) translateX(1000px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-animation" id="movingBackground"></div>
+    <section class="container" aria-labelledby="intro">
+        <h1 id="intro">Hello, I'm Shayan Syed</h1>
+        <p>Welcome to my portfolio, where technology meets creativity.</p>
+        <div class="button-container" role="navigation">
+            <a href="index.html" class="more-button" aria-label="Learn more about me">More About Me</a>
+        </div>
+    </section>
+    <script>
+        function createDots() {
+            const area = document.getElementById('movingBackground');
+            for (let i = 0; i < 50; i++) {
+                let dot = document.createElement('div');
+                dot.className = 'dot';
+                dot.style.left = `${Math.random() * window.innerWidth}px`;
+                dot.style.top = `${Math.random() * window.innerHeight}px`;
+                dot.style.animationDuration = `${Math.random() * 5 + 5}s`;
+                dot.style.animationDelay = `-${Math.random() * 5}s`;
+                dot.style.animationName = 'move';
+                area.appendChild(dot);
+            }
+        }
+        createDots();
+    </script>
+</body>
+</html>

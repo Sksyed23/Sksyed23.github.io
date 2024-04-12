@@ -16,7 +16,12 @@ function hoverEffect(element) {
 function hoverEffectOff(element) {
     element.style.color = 'black'; // Original color
 }
-
+document.querySelectorAll('.image-with-caption').forEach(image => {
+  image.addEventListener('click', () => {
+      // Toggle the 'enlarged' class on click
+      image.classList.toggle('enlarged');
+  });
+});
 // New form functionality
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
